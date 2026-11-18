@@ -60,3 +60,12 @@ dsh plugin --profile desktop add dsh-safe-restart
 ## 许可
 
 MIT
+
+## 核验补丁接线
+
+```bash
+node scripts/verify-main.mjs            # 自动在常见安装位置找 main.js
+node scripts/verify-main.mjs <main.js>  # 或显式指定
+```
+
+只读脚本，核对三项容易「看着 patched 其实接错」的地方：托盘菜单项确实排在「退出」前面、`DesktopTray` 构造实参里确实传了 `restart`、`safeRestart` 引用的 `resolveDesktopQuitPrompt` / `quitting` / `backend` / `app.relaunch` 都在。

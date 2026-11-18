@@ -50,5 +50,8 @@
     "client": {
       "platform": "web"
     }
+  },
+  "scripts": {
+    "verify": "node scripts/verify-main.mjs"
   }
 }
