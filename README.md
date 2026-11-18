@@ -2,7 +2,7 @@
 
 给 **DeepSeek Harness 桌面端**托盘点菜单加一项「**重启 DeepSeek Harness**」。
 
-![托盘菜单里的「重启 DeepSeek Harness」](https://raw.githubusercontent.com/InsaneGenji/dsh-safe-restart/main/assets/tray-menu.png)
+![托盘菜单里的「重启 DeepSeek Harness」](https://raw.githubusercontent.com/InsaneGenji/dsh-safe-restart/master/assets/tray-menu.png)
 
 
 - 有正在运行的任务时 → 先弹一个 Electron 原生确认框，**标题和按钮都写「重启」**，并沿用官方那句「当前正在运行的任务将会中断」。
