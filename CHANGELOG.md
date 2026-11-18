@@ -1,5 +1,9 @@
 # 变更记录
 
+## 0.1.2
+
+- 与 0.1.1 内容一致，仅重发：0.1.1 当时的 tarball 在 registry 上一度 404（传播未完成），重发一个版本把 latest 顶到可下载的包
+
 ## 0.1.1
 
 - 修：语法预检改用真正的 node（`process.execPath` 在宿主里指向 Electron 的 exe，`--check` 会失败，导致启动时自动重打直接放弃）。查找顺序：`DSH_SAFE_RESTART_NODE` / `DSH_NODE_BIN` → 自身是 node → 客户端自带 runtime → PATH；都没有就跳过预检并记一条 warn，备份与原子写入照旧。

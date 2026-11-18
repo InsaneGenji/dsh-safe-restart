@@ -1,6 +1,6 @@
 {
   "name": "dsh-safe-restart",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "给 DSH 桌面端托盘加一个「重启 DeepSeek Harness」项：有任务在跑时先弹原生确认框（标题与按钮都是「重启」），没有任务就直接重启。判断条件与官方托盘「退出」同源。",
   "type": "module",
   "main": "./lib/index.js",
