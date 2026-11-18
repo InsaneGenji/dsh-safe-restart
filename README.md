@@ -69,3 +69,7 @@ node scripts/verify-main.mjs <main.js>  # 或显式指定
 ```
 
 只读脚本，核对三项容易「看着 patched 其实接错」的地方：托盘菜单项确实排在「退出」前面、`DesktopTray` 构造实参里确实传了 `restart`、`safeRestart` 引用的 `resolveDesktopQuitPrompt` / `quitting` / `backend` / `app.relaunch` 都在。
+
+## 停用前先撤销
+
+托盘那一项是 main.js 里的代码，插件只负责「谁来回调」。停用或卸载本插件之前，先在设置页点一次「撤销补丁」，否则托盘里会留一个点了没反应的「重启」项（插件不在了，没人接管那次点击）。撤销是字节级还原，随时可以再打回来。
