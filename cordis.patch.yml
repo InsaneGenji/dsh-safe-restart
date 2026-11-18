@@ -1,0 +1,5 @@
+# dsh-safe-restart — bundle patch
+# 只声明 Host 半部；Web 半部由 package.json 的 dsh.client 自动组装。
+- insert:
+    - id: dsh-safe-restart
+      name: dsh-safe-restart

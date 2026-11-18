@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "安全重启",
+    "description": "在桌面端托盘菜单加「重启 DeepSeek Harness」：有任务在跑时先弹原生确认框，按钮与标题都是「重启」。"
+  }
+}

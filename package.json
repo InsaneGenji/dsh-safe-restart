@@ -1,0 +1,54 @@
+{
+  "name": "dsh-safe-restart",
+  "version": "0.1.0",
+  "description": "给 DSH 桌面端托盘加一个「重启 DeepSeek Harness」项：有任务在跑时先弹原生确认框（标题与按钮都是「重启」），没有任务就直接重启。判断条件与官方托盘「退出」同源。",
+  "type": "module",
+  "main": "./lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "locale",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "engines": {
+    "node": ">=20",
+    "dsh": ">=0.2.0-rc.2"
+  },
+  "author": "InsaneGenji",
+  "homepage": "https://github.com/InsaneGenji/dsh-safe-restart#readme",
+  "bugs": {
+    "url": "https://github.com/InsaneGenji/dsh-safe-restart/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "dsh-plugin",
+    "restart",
+    "tray",
+    "desktop"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/InsaneGenji/dsh-safe-restart.git"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web"
+    }
+  }
+}
