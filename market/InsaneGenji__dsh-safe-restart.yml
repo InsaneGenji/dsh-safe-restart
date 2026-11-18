@@ -1,0 +1,8 @@
+# 提交给 awesome-dsh-plugin 的条目草稿（data/plugins/InsaneGenji__dsh-safe-restart.yml）
+url: https://github.com/InsaneGenji/dsh-safe-restart
+name: InsaneGenji/dsh-safe-restart
+category: ui
+description:
+  en: 'Adds a Restart DeepSeek Harness item to the desktop tray; when tasks are running it asks first, with a native dialog whose title and button both say Restart.'
+  zh: 给桌面端托盘加一项「重启 DeepSeek Harness」；有任务在跑时先弹原生确认框，标题与按钮都是「重启」。
+tarball: https://github.com/InsaneGenji/dsh-safe-restart/releases/latest/download/dsh-safe-restart.tgz
